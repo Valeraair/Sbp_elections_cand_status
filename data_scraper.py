@@ -1,11 +1,7 @@
 from selenium import webdriver
-import time
-import datetime
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-start = datetime.datetime.now()
-print('Время старта: ' + str(start))
 driver = webdriver.Firefox()
 wait = WebDriverWait(driver, 20, 1)
 filter_locator = ('xpath', '//th[contains(text(), "Субьект выдвижения")]')
